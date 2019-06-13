@@ -1,0 +1,8 @@
+<app-header (selected) = "navTo($event)"></app-header>
+<!-- <div class="container">
+        <router-outlet></router-outlet>
+</div> -->
+<div class="container">
+    <app-recipes *ngIf="navigation === 'recipe'" ></app-recipes>
+    <app-shopping-list *ngIf="navigation === 'shopping-list'"></app-shopping-list>
+</div>
